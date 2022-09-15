@@ -17,6 +17,8 @@ jobs:
           pip install pytest
       - name: Install plugin
         run: pip install pytest-github-actions-annotate-failures
+      - name: Lint Action
+        uses: wearerequired/lint-action@v2.1.0
       - name: Test with pytest  
         run: |
           python -m pytest
